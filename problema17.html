@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promedio Ponderado</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand"><div class="nav-brand-icon">🐢</div><span class="nav-brand-text">TurtleLand</span></a>
+    <a href="../index.html" class="nav-back">← Inicio</a>
+  </nav>
+<main>
+  <div class="problem-layout">
+    <div class="problem-visual-panel">
+      <div class="problem-emoji-wrap">
+        <div class="problem-emoji-bg">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.KSzEFLWkC_jGGQOLEK60egHaHa?r=0&w=996&h=996&rs=1&pid=ImgDetMain&o=7&rm=3" alt="chico presentando exámen" class="problem-image">
+        </div>
+      </div>
+      <div class="problem-info"><div class="problem-num-badge">Ejercicio 2.17</div><div class="problem-visual-title">Promedio Ponderado</div></div>
+      <div class="formula-card">P = E1x0.25 + E2x0.25 + E3x0.50</div>
+    </div>
+    <div class="problem-form-panel">
+      <div class="problem-header"><h1>Promedio Ponderado del Alumno</h1><p>Calcula la calificación final: Examen 1 (25%), Examen 2 (25%) y Examen 3 (50%).</p></div>
+      <div>
+        <div class="form-group"><label class="form-label">Calificación Examen 1 (25%)</label><input class="form-input" id="e1" type="number" placeholder="ej. 8.5" min="0" max="10" step="0.1"/></div>
+        <div class="form-group"><label class="form-label">Calificación Examen 2 (25%)</label><input class="form-input" id="e2" type="number" placeholder="ej. 9.0" min="0" max="10" step="0.1"/></div>
+        <div class="form-group"><label class="form-label">Calificación Examen 3 (50%)</label><input class="form-input" id="e3" type="number" placeholder="ej. 7.5" min="0" max="10" step="0.1"/></div>
+        <div id="result" class="result-card"><div class="result-label">Calificación final</div><div class="result-value" id="result-value">—</div><div class="result-desc" id="result-desc"></div></div>
+        <div style="margin-top:24px"><button class="btn-primary" onclick="calcular()"><span>✦</span> Calcular</button><button class="btn-reset" onclick="resetForm()">Limpiar campos</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../js/problema17.js"></script>
+</body>
+</html>

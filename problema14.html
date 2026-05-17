@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheque Viaje</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand"><div class="nav-brand-icon">🐢</div><span class="nav-brand-text">TurtleLand</span></a>
+    <a href="../index.html" class="nav-back">← Inicio</a>
+  </nav>
+<main>
+  <div class="problem-layout">
+    <div class="problem-visual-panel">
+      <div class="problem-emoji-wrap">
+        <div class="problem-emoji-bg">
+          <img src="https://img.freepik.com/vector-premium/fondo-viaje-dibujado-mano-diseno-ilustraciones-viaje_8499-9383.jpg?w=2000" alt="cosas de viaje" class="problem-image">
+        </div>
+      </div>
+      <div class="problem-info"><div class="problem-num-badge">Ejercicio 2.14</div><div class="problem-visual-title">Cheque de Viaje</div></div>
+      <div class="formula-card">total = (hotel + comida + extras) x días</div>
+    </div>
+    <div class="problem-form-panel">
+      <div class="problem-header"><h1>Monto de Cheque para Viaje</h1><p>Calcula el monto total del viaje sumando hotel, comida y gastos extras por día.</p></div>
+      <div>
+        <div class="form-group"><label class="form-label">Costo de hotel por día ($)</label><input class="form-input" id="hotel" type="number" placeholder="ej. 800.00" min="0" step="0.01"/></div>
+        <div class="form-group"><label class="form-label">Costo de comida por día ($)</label><input class="form-input" id="comida" type="number" placeholder="ej. 200.00" min="0" step="0.01"/></div>
+        <div class="form-group"><label class="form-label">Gastos extras por día ($)</label><input class="form-input" id="extras" type="number" placeholder="ej. 100.00" min="0" step="0.01"/></div>
+        <div class="form-group"><label class="form-label">Número de días</label><input class="form-input" id="dias" type="number" placeholder="ej. 5" min="1" step="1"/></div>
+        <div id="result" class="result-card"><div class="result-label">Monto total del cheque</div><div class="result-value" id="result-value">—</div><div class="result-desc" id="result-desc"></div></div>
+        <div style="margin-top:24px"><button class="btn-primary" onclick="calcular()"><span>✦</span> Calcular</button><button class="btn-reset" onclick="resetForm()">Limpiar campos</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../js/problema14.js"></script>
+</body>
+</html>

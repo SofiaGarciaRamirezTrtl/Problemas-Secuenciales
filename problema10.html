@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pago de Agua</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand"><div class="nav-brand-icon">🐢</div><span class="nav-brand-text">TurtleLand</span></a>
+    <a href="../index.html" class="nav-back">← Inicio</a>
+  </nav>
+<main>
+  <div class="problem-layout">
+    <div class="problem-visual-panel">
+      <div class="problem-emoji-wrap">
+        <div class="problem-emoji-bg">
+          <img src="https://as1.ftcdn.net/v2/jpg/05/66/14/48/1000_F_566144805_HkXFOQaNakk0msjXYisCtsTQS3LMP371.jpg" alt="gota de agua" class="problem-image">
+        </div>
+      </div>
+      <div class="problem-info"><div class="problem-num-badge">Ejercicio 2.10</div><div class="problem-visual-title">Pago de Agua</div></div>
+      <div class="formula-card">pago = m³ x tarifa_por_m³</div>
+    </div>
+    <div class="problem-form-panel">
+      <div class="problem-header"><h1>Pago de Servicio de Agua</h1><p>Calcula el monto a pagar por el consumo de agua en metros cúbicos.</p></div>
+      <div>
+        <div class="form-group"><label class="form-label">Metros cúbicos consumidos (m³)</label><input class="form-input" id="m3" type="number" placeholder="ej. 12" min="0" step="0.1"/></div>
+        <div class="form-group"><label class="form-label">Tarifa por m³ ($)</label><input class="form-input" id="tarifa" type="number" placeholder="ej. 8.50" min="0" step="0.01"/></div>
+        <div id="result" class="result-card"><div class="result-label">Total a pagar</div><div class="result-value" id="result-value">—</div><div class="result-desc" id="result-desc"></div></div>
+        <div style="margin-top:24px"><button class="btn-primary" onclick="calcular()"><span>✦</span> Calcular</button><button class="btn-reset" onclick="resetForm()">Limpiar campos</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../js/problema10.js"></script>
+</body>
+</html>

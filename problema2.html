@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesos a Dólares</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand"><div class="nav-brand-icon">🐢</div><span class="nav-brand-text">TurtleLand</span></a>
+    <a href="../index.html" class="nav-back">← Inicio</a>
+  </nav>
+<main>
+  <div class="problem-layout">
+    <div class="problem-visual-panel">
+      <div class="problem-emoji-wrap">
+        <div class="problem-emoji-bg">
+        <img src="https://s3.envato.com/files/1bb9466f-ef6c-48c6-98d0-daa9bde98d68/inline_image_preview.jpg" alt="dólar" class="problem-image">
+        </div>
+      </div>
+      <div class="problem-info">
+        <div class="problem-num-badge">Ejercicio 2.2</div>
+        <div class="problem-visual-title">Pesos MXN a Dólares USD</div>
+      </div>
+      <div class="formula-card">USD = MXN / tipo_de_cambio</div>
+    </div>
+    <div class="problem-form-panel">
+      <div class="problem-header">
+        <h1>Conversión MXN → USD</h1>
+        <p>Convierte pesos mexicanos a dólares usando el tipo de cambio que indique.</p>
+      </div>
+      <div>
+        <div class="form-group"><label class="form-label">Cantidad en pesos (MXN)</label><input class="form-input" id="pesos" type="number" placeholder="ej. 1000" min="0" /></div>
+        <div class="form-group"><label class="form-label">Tipo de cambio (MXN por 1 USD)</label><input class="form-input" id="cambio" type="number" placeholder="ej. 17.5" min="0" step="0.01" /></div>
+        <div id="result" class="result-card">
+          <div class="result-label">Equivalente en dólares</div>
+          <div class="result-value" id="result-value">—</div>
+          <div class="result-desc" id="result-desc"></div>
+        </div>
+        <div style="margin-top:24px">
+          <button class="btn-primary" onclick="calcular()"><span>✦</span> Convertir</button>
+          <button class="btn-reset" onclick="resetForm()">Limpiar campos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../js/problema2.js"></script>
+</body>
+</html>

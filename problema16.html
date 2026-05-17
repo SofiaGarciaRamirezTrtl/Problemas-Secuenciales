@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Área del cuadrado</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand"><div class="nav-brand-icon">🐢</div><span class="nav-brand-text">TurtleLand</span></a>
+    <a href="../index.html" class="nav-back">← Inicio</a>
+  </nav>
+<main>
+  <div class="problem-layout">
+    <div class="problem-visual-panel">
+      <div class="problem-emoji-wrap">
+        <div class="problem-emoji-bg">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.NFtQcalPV7WXjS74cYnQmgAAAA?r=0&w=360&h=360&rs=1&pid=ImgDetMain&o=7&rm=3" alt="cuadrado" class="problem-image">
+        </div>
+      </div>
+      <div class="problem-info"><div class="problem-num-badge">Ejercicio 2.16</div><div class="problem-visual-title">Área del Cuadrado</div></div>
+      <div class="formula-card">A = lado²</div>
+    </div>
+    <div class="problem-form-panel">
+      <div class="problem-header"><h1>Área del Cuadrado</h1><p>Calcula el área de un cuadrado elevando la longitud del lado al cuadrado.</p></div>
+      <div>
+        <div class="form-group"><label class="form-label">Longitud del lado (unidades)</label><input class="form-input" id="lado" type="number" placeholder="ej. 7" min="0" step="0.01"/></div>
+        <div id="result" class="result-card"><div class="result-label">Área del cuadrado</div><div class="result-value" id="result-value">—</div><div class="result-desc" id="result-desc"></div></div>
+        <div style="margin-top:24px"><button class="btn-primary" onclick="calcular()"><span>✦</span> Calcular</button><button class="btn-reset" onclick="resetForm()">Limpiar campos</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="../js/problema16.js"></script>
+</body>
+</html>
